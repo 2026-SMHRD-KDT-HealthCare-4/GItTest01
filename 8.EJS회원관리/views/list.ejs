@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>전체회원 조회 페이지</h1>
+  <table border="1">
+    <tr>
+      <th>No.</th>
+      <th>회원아이디</th>
+      <th>비밀번호</th>
+    </tr>
+    <% if (user.length> 0) { %>
+
+      <% for (let i=0;i<user.length;i++){%>
+        <tr>
+          <td>
+            <%=i+1%>
+          </td>
+          <td>
+            <%=user[i].id%>
+          </td>
+          <td>
+            <%=user[i].pw%>
+          </td>
+        </tr>
+        <%}%>
+  </table>
+  <%}else{ %>
+    <tr>
+      <td colspan="3">회원정보가 없습니다</td>
+    </tr>
+    <% }%>
+</body>
+
+</html>
