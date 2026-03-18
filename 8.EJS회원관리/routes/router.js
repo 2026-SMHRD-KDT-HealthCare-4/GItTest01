@@ -1,5 +1,17 @@
 const express = require("express");
 const router = express.Router();
+// 지명 주석 작성1
+//가형주석작성
+
+// 지명 주석 작성
+
+// 나연 주석 작성
+
+
+// 캬옵
+
+
+// 현철 수정
 
 // 윤현 주석 작성
 
